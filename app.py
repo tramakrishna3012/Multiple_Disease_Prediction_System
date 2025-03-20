@@ -5,7 +5,6 @@ import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 import pandas as pd
 from streamlit_option_menu import option_menu
-import pickle
 from PIL import Image
 import numpy as np
 import plotly.figure_factory as ff
@@ -31,6 +30,7 @@ chronic_disease_model = joblib.load('models/chronic_model.sav')
 
 # Load the hepatitis prediction model
 hepatitis_model = joblib.load('models/hepititisc_model.sav')
+
 
 
 liver_model = joblib.load('models/liver_model.sav')# Load the lung cancer prediction model
@@ -109,7 +109,7 @@ if selected == 'Diabetes Prediction':  # pagetitle
         BloodPressure = st.number_input("Blood pressure  value")
     with col1:
 
-        SkinThickness = st.number_input("Skin thickness value")
+        SkinThickness = st.number_input("Sckinthickness value")
 
     with col2:
 
